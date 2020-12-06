@@ -16,6 +16,7 @@ header {
     background-color: #F4F9E2;
 }
 
+
 .header_container {
     width: 100%;
     max-width: 1170px;
@@ -222,6 +223,7 @@ hr {
 
 .card_inner {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card_block1,
@@ -286,6 +288,7 @@ hr {
     list-style-image: url(../images/list.png);
     list-style-position: outside;
 }
+
 .card_h_block1:hover,
 .card_h_block2:hover,
 .card_h_block3:hover,
@@ -436,7 +439,7 @@ hr {
 .contact-left {
     flex: 1.5;
     background-color: #22356F;
-    padding: 0 180px;
+    padding: 0 25px;
 }
 
 .contact-right {
@@ -473,12 +476,9 @@ hr {
     color: #000000;
 }
 
-.info-left {
-  
-}
 
 .info_img {
-    height: 380px;
+    max-width: 100%;
 }
 
 .info-right {
@@ -534,6 +534,68 @@ hr {
     line-height: 9px;
     letter-spacing: -0.006em;
     color: #FFFFFF;
+}
+.myAnimate {
+    animation: myAnimate 3s;
+}
+@keyframes MyAnimate{
+    0%,
+    40%,
+    80%{
+        transform: scale(1);
+    }
+    20%,
+    60%,
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 1080px) {
+    .top-left-wrapper {
+        padding: 0 200px;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .card_block1,
+    .card_block2,
+    .card_block3,
+    .card_block4 {
+        width: 50%;
+    }
+
+    .advice_block {
+        width: 50%;
+    }
+
+    .statisctic_title {
+        margin-bottom: 0;
+    }
+
+    .contact-left {
+        padding: 0 60px;
+    }
+
+    .contact_subtitle {
+        font-size: 40px;
+    }
+
+    .contact_text {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 960px) {
+    .info {
+        display: block;
+    }
+
+    .info_img {
+        width: 100%;
+    }
 }
 
 
